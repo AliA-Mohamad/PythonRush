@@ -7,6 +7,9 @@ print("numero:", numero, "\ntipo:", type(numero))
 decimal = 10.5
 print("decimal:", decimal, "\ntipo:", type(decimal))
 
+booleano = True
+print("booleano:", booleano, "\ntipo:", type(booleano))
+
 vazio = None
 print("vazio:", vazio, "\ntipo:", type(vazio))
 
