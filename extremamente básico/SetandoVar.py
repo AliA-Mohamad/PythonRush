@@ -25,3 +25,6 @@ print("sequencia:", sequencia, "\ntipo:", type(sequencia))
 conjunto = {1, 2, 3, 3, 3, 4}
 print("conjunto:", conjunto, "\ntipo:", type(conjunto))
 
+def funcao(): 
+    return vazio
+print("funcao:", funcao(), "\ntipo:", type(funcao))
