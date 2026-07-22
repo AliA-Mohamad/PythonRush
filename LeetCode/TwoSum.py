@@ -13,3 +13,10 @@ def tentativa02(self, nums, target):
             return [i, map[diferenca]]
         map[num] = i
     return []
+
+def tentativa03(self, nums, target):
+    map = {}
+    for i in range(len(nums)):
+        if target - nums[i] in map:
+            return i,map[target - nums[i]]
+        map[nums[i]] = i  
