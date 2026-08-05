@@ -10,6 +10,22 @@ def findMissingElements2(nums: List[int]) -> List[int]:
     numsSet = set(nums)
     return [ num for num in range(min(nums), max(nums) + 1) if num not in numsSet]
 
-print(findMissingElements2([1,4,2,5]))
-print(findMissingElements2([7,8,6,9]))
-print(findMissingElements2([5,1]))
+def findMissingElements3(nums: List[int]) -> List[int]:
+    for i in range(len(nums)):
+        indice = abs(nums[i]) - 1
+
+        if nums[indice] > 0:
+            nums[indice] *= -1
+
+    resultado = []
+
+    for i in range(len(nums)):
+        if nums[i] > 0:
+            resultado.append(i + 1)
+
+    return resultado
+
+
+print(findMissingElements3([1,4,2,5]))
+print(findMissingElements3([7,8,6,9]))
+print(findMissingElements3([5,1]))
